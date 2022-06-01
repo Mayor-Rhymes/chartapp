@@ -1,12 +1,12 @@
 import React from 'react';
 
-const BarItem = ({heightCalc, backgroundColor}) => {
+const BarItem = ({heightCalc, backgroundColor, amount}) => {
 
   return (
 
 
     <>
-    <div style={{ height: `${3*heightCalc}px`, backgroundColor: `${backgroundColor}`}} className='bar-item'>
+    <div className='bar-item' style={{ height: `${3*heightCalc}px`, backgroundColor: `${backgroundColor}`}} title={amount}>
       
         
        

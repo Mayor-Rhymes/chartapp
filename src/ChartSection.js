@@ -43,14 +43,17 @@ const ChartSection = () => {
             {chartData.map(item => {
 
                 if(item.amount === checker()){
-                    return <BarItem key={item.day} heightCalc={item.amount} name={item.day} backgroundColor = {"hsl(186, 34%, 60%)"}/>
+                    return <BarItem 
+                    key={item.day} heightCalc={item.amount} name={item.day} backgroundColor = {"hsl(186, 34%, 60%)"}
+                    amount={item.amount}
+                    />
 
                 }
 
                 else{
 
 
-                    return  <BarItem key={item.day} heightCalc={item.amount} name={item.day}/>
+                    return  <BarItem key={item.day} heightCalc={item.amount} name={item.day} amount={item.amount}/>
                 }
             }
                 
